@@ -3,9 +3,9 @@
    Accent: warm Golden Bay gold on cream, warm espresso anchor */
 
 :root {
-  --gold: #c0871f;
-  --gold-deep: #9c6c14;
-  --gold-soft: #e7b64d;
+  --gold: #f5a300;
+  --gold-deep: #e8690f;
+  --gold-soft: #fbc24a;
   --espresso: #241a12;
   --espresso-2: #322418;
   --ink: #2a231c;
@@ -85,7 +85,7 @@ a { color: inherit; text-decoration: none; }
   transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
   white-space: nowrap;
 }
-.btn-primary { background: var(--gold); color: #fff; box-shadow: 0 14px 30px -14px rgba(192,135,31,.7); }
+.btn-primary { background: var(--gold); color: var(--espresso); box-shadow: 0 14px 30px -14px rgba(245,163,0,.7); }
 .btn-primary:hover { transform: translateY(-2px); background: var(--gold-deep); }
 .btn-ghost { background: transparent; border-color: rgba(255,255,255,.55); color: #fff; }
 .btn-ghost:hover { background: rgba(255,255,255,.12); transform: translateY(-2px); }
@@ -188,7 +188,7 @@ a { color: inherit; text-decoration: none; }
   transition: transform .3s ease, box-shadow .3s ease;
 }
 .card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
-.card .ic { width: 54px; height: 54px; border-radius: 15px; background: linear-gradient(150deg, var(--gold-soft), var(--gold)); display: grid; place-items: center; color: #fff; margin-bottom: 1.2rem; box-shadow: 0 10px 20px -12px rgba(192,135,31,.9); }
+.card .ic { width: 54px; height: 54px; border-radius: 15px; background: linear-gradient(150deg, var(--gold-soft), var(--gold)); display: grid; place-items: center; color: #fff; margin-bottom: 1.2rem; box-shadow: 0 10px 20px -12px rgba(245,163,0,.9); }
 .card h3 { font-size: 1.25rem; margin-bottom: .5rem; }
 .card p { color: var(--muted); font-size: .96rem; }
 @media (max-width: 900px){ .cards { grid-template-columns: 1fr 1fr; } }
@@ -203,7 +203,7 @@ a { color: inherit; text-decoration: none; }
 .corner-tag b { font-size: 1.5rem; }
 .checklist { list-style: none; margin-top: 1.6rem; display: grid; gap: .85rem; }
 .checklist li { display: flex; gap: .8rem; align-items: flex-start; font-weight: 500; }
-.checklist li .tick { flex: 0 0 auto; width: 24px; height: 24px; border-radius: 50%; background: rgba(192,135,31,.14); color: var(--gold-deep); display: grid; place-items: center; margin-top: 2px; }
+.checklist li .tick { flex: 0 0 auto; width: 24px; height: 24px; border-radius: 50%; background: rgba(245,163,0,.14); color: var(--gold-deep); display: grid; place-items: center; margin-top: 2px; }
 .about p + p { margin-top: 1rem; }
 @media (max-width: 860px){ .split { grid-template-columns: 1fr; } .corner-tag { left: auto; right: 16px; } }
 
@@ -218,13 +218,13 @@ a { color: inherit; text-decoration: none; }
 .crew { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
 .crew-card { background: var(--card); border-radius: var(--radius-lg); padding: 2rem 1.7rem; border: 1px solid var(--line); text-align: center; box-shadow: var(--shadow-soft); transition: transform .3s; }
 .crew-card:hover { transform: translateY(-5px); }
-.avatar { width: 78px; height: 78px; border-radius: 50%; margin: 0 auto 1.1rem; background: var(--espresso); color: var(--gold-soft); display: grid; place-items: center; font-family: "Schibsted Grotesk", sans-serif; font-weight: 800; font-size: 1.5rem; box-shadow: 0 0 0 4px rgba(192,135,31,.22); }
+.avatar { width: 78px; height: 78px; border-radius: 50%; margin: 0 auto 1.1rem; background: var(--espresso); color: var(--gold-soft); display: grid; place-items: center; font-family: "Schibsted Grotesk", sans-serif; font-weight: 800; font-size: 1.5rem; box-shadow: 0 0 0 4px rgba(245,163,0,.22); }
 .crew-card h4 { font-size: 1.2rem; }
 .crew-card .role { color: var(--gold-deep); font-weight: 700; font-size: .82rem; text-transform: uppercase; letter-spacing: .12em; margin: .3rem 0 .7rem; }
 .crew-card p { color: var(--muted); font-size: .93rem; }
 @media (max-width: 820px){ .crew { grid-template-columns: 1fr; max-width: 420px; margin-inline: auto; } }
 
-.badge { display: inline-block; background: rgba(192,135,31,.14); color: var(--gold-deep); font-weight: 700; font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; padding: .35rem .85rem; border-radius: 999px; margin-bottom: 1rem; }
+.badge { display: inline-block; background: rgba(245,163,0,.14); color: var(--gold-deep); font-weight: 700; font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; padding: .35rem .85rem; border-radius: 999px; margin-bottom: 1rem; }
 
 /* ---------- REVIEWS ---------- */
 .reviews { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
@@ -313,3 +313,11 @@ a { color: inherit; text-decoration: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
   * { animation: none !important; }
 }
+
+/* ---- Real logo + team photos ---- */
+.brand__img { height: 46px; width: auto; display: block; }
+.nav.scrolled .brand__img { height: 42px; }
+.footer .brand__img { height: 52px; }
+.avatar.photo { background: none; box-shadow: 0 0 0 4px rgba(245,163,0,.22); overflow: hidden; }
+.avatar.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.intro .intro-logo { width: clamp(120px, 22vw, 168px); height: auto; display: block; margin: 0 auto 1.1rem; animation: pop .8s cubic-bezier(.2,.8,.2,1); }
