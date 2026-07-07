@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Leave a Review | Good as Gold Cafe</title>
+<meta name="description" content="Tell us how your visit to Good as Gold Cafe went — we'd love your feedback." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23c0871f'/%3E%3Ctext x='50' y='70' font-family='Georgia,serif' font-size='58' font-weight='bold' text-anchor='middle' fill='white'%3EG%3C/text%3E%3C/svg%3E" />
+<style>
+  .rate-wrap { max-width: 620px; margin-inline: auto; text-align: center; }
+  .rate-card { background:#fff; border:1px solid var(--line); border-radius: var(--radius-lg); padding: clamp(2rem,5vw,3.4rem); box-shadow: var(--shadow); margin-top: 2.5rem; }
+  .star-row { display:flex; justify-content:center; gap:.5rem; margin: 1.6rem 0 1rem; }
+  .star-btn { font-size: clamp(2.4rem,9vw,3.4rem); line-height:1; background:none; border:0; cursor:pointer; color:#d9cdb8; transition: transform .15s ease, color .15s ease; }
+  .star-btn:hover { transform: translateY(-4px) scale(1.08); }
+  .star-btn.lit { color: var(--gold); }
+  .rate-hint { color: var(--muted); font-size:.95rem; min-height:1.4em; }
+  .rate-note { margin-top:1.6rem; font-size:.85rem; color:var(--muted); }
+</style>
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <a href="index.html" class="brand"><span class="mark">G</span> Good as Gold</a>
+  <div class="nav-links">
+    <a href="index.html" class="link">Home</a>
+    <a href="index.html#menu" class="link">Menu</a>
+    <a href="index.html#visit" class="link">Visit</a>
+    <a href="tel:+6427233 0539" class="nav-cta">Call us</a>
+  </div>
+  <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="subhead">
+  <div class="wrap" style="text-align:center;">
+    <span class="eyebrow" style="justify-content:center;">Your feedback</span>
+    <h1>How was your visit?</h1>
+    <p style="margin-inline:auto;">We'd love to hear how Good as Gold Cafe treated you. Tap the stars below to get started.</p>
+  </div>
+</header>
+
+<section class="section section-cream">
+  <div class="wrap rate-wrap">
+    <div class="rate-card reveal in">
+      <h2 style="font-size:1.5rem;">Rate your experience</h2>
+      <div class="star-row" id="stars">
+        <button class="star-btn" data-v="1" aria-label="1 star">★</button>
+        <button class="star-btn" data-v="2" aria-label="2 stars">★</button>
+        <button class="star-btn" data-v="3" aria-label="3 stars">★</button>
+        <button class="star-btn" data-v="4" aria-label="4 stars">★</button>
+        <button class="star-btn" data-v="5" aria-label="5 stars">★</button>
+      </div>
+      <p class="rate-hint" id="hint">Tap a star to rate us</p>
+      <p class="rate-note">Loved it? You'll be sent to Google to share it. If something wasn't right, we'll take your feedback privately so we can put it right.</p>
+    </div>
+    <a href="index.html" class="back-link">← Back to home</a>
+  </div>
+</section>
+
+<script>
+  // 4-5 stars -> Google review; 1-3 stars -> private feedback form
+  var GOOGLE_REVIEW_URL = "https://g.page/r/PLACEHOLDER";
+  var hints = { 1:"We're sorry to hear that — tell us more", 2:"Not good enough — let us know what happened", 3:"Thanks — how could we do better?", 4:"Great! Share it on Google", 5:"Wonderful! Share the love on Google" };
+  var stars = document.querySelectorAll(".star-btn");
+  var hint = document.getElementById("hint");
+  function paint(v){ stars.forEach(function(s){ s.classList.toggle("lit", +s.dataset.v <= v); }); }
+  stars.forEach(function(s){
+    s.addEventListener("mouseenter", function(){ paint(+s.dataset.v); hint.textContent = hints[s.dataset.v]; });
+    s.addEventListener("click", function(){
+      var v = +s.dataset.v; paint(v);
+      setTimeout(function(){
+        if (v >= 4) { window.location.href = GOOGLE_REVIEW_URL; }
+        else { window.location.href = "private.html?rating=" + v; }
+      }, 180);
+    });
+  });
+  document.getElementById("stars").addEventListener("mouseleave", function(){ paint(0); hint.textContent = "Tap a star to rate us"; });
+</script>
+<script src="main.js"></script>
+</body>
+</html>
