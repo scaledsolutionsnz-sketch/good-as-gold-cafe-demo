@@ -321,3 +321,8 @@ a { color: inherit; text-decoration: none; }
 .avatar.photo { background: none; box-shadow: 0 0 0 4px rgba(245,163,0,.22); overflow: hidden; }
 .avatar.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .intro .intro-logo { width: clamp(120px, 22vw, 168px); height: auto; display: block; margin: 0 auto 1.1rem; animation: pop .8s cubic-bezier(.2,.8,.2,1); }
+
+/* Brand name text next to nav logo */
+.brand__name { font-family: "Schibsted Grotesk", sans-serif; font-weight: 800; font-size: 1.12rem; letter-spacing: -0.01em; color: #fff; white-space: nowrap; }
+.nav.scrolled .brand__name { color: var(--espresso); }
+@media (max-width: 520px){ .brand__name { display: none; } }
