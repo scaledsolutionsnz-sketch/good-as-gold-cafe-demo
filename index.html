@@ -43,8 +43,10 @@
 
 <!-- HERO -->
 <header class="hero" id="top">
-  <div class="hero-slides">
+  <div class="hero-slides" aria-hidden="true">
     <div class="hero-slide active" style="background-image:url('images/hero-main.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/outside.jpg')"></div>
+    <div class="hero-slide" style="background-image:url('images/pantry.jpg')"></div>
   </div>
   <div class="hero-overlay"></div>
   <div class="wrap hero-content">
@@ -55,32 +57,14 @@
       <a href="#visit" class="btn btn-primary btn-lg">Find us</a>
       <a href="tel:+6427233 0539" class="btn btn-ghost btn-lg">Call the cafe</a>
     </div>
-    <div class="hero-meta">
-      <div><b>★ 4.5 / 5</b>Rated by 33 Google reviews</div>
-      <div><b>Open daily</b>Coffee from early</div>
-      <div><b>Main road</b>Right through Tākaka</div>
+    <div class="hero-rating">
+      <span class="hr-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="hr-txt"><strong>4.6 on Google</strong>From 39 reviews in Golden Bay</span>
+    </div>
     </div>
   </div>
   <div class="scroll-hint">Scroll</div>
 </header>
-
-<!-- TRUST STRIP -->
-<section class="trust">
-  <div class="wrap trust-grid">
-    <div class="trust-item">
-      <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-      <div><h4>Right in Tākaka</h4><p>Easy to find on the main road through Golden Bay — pull in on your way through.</p></div>
-    </div>
-    <div class="trust-item">
-      <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z"/><path d="M16 9h2a2 2 0 0 1 0 4h-2"/><path d="M7 2v2M10 2v2M13 2v2"/></svg></span>
-      <div><h4>Coffee done properly</h4><p>Espresso pulled fresh for every cup — no shortcuts, no burnt bitterness.</p></div>
-    </div>
-    <div class="trust-item">
-      <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9 6.8 19.2l1-5.8L3.5 9.2l5.9-.9L12 3z"/></svg></span>
-      <div><h4>4.5 stars, 33 reviews</h4><p>Loved by locals and passers-through for the food, the coffee and the welcome.</p></div>
-    </div>
-  </div>
-</section>
 
 <!-- MENU / SERVICES -->
 <section class="section section-cream" id="menu">
@@ -92,32 +76,32 @@
     </div>
     <div class="cards">
       <div class="card reveal">
-        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 8h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8z"/><path d="M16 9h2a2 2 0 0 1 0 4h-2"/></svg></span>
+        <div class="card-media"><img src="images/hero.jpg" alt="The Good as Gold storefront on Commercial Street" loading="lazy" /></div>
         <h3>Espresso &amp; coffee</h3>
         <p>Flat whites, long blacks, mochas and the rest — pulled fresh, made how you like it. Decaf and plant milks on hand.</p>
       </div>
       <div class="card reveal">
-        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></span>
+        <div class="card-media"><img src="images/food-spread.jpg" alt="Eggs benedict plated up for brunch" loading="lazy" /></div>
         <h3>All-day brunch</h3>
         <p>Big breakfasts, eggs done right, and hearty plates that set you up for a day exploring the Bay.</p>
       </div>
       <div class="card reveal">
-        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-6h6v6"/></svg></span>
+        <div class="card-media"><img src="images/cake.jpg" alt="Cream-filled slices fresh in the cabinet" loading="lazy" /></div>
         <h3>Cabinet &amp; baking</h3>
         <p>Fresh baking, savouries, slices and treats in the cabinet — grab one with your coffee or take a box home.</p>
       </div>
       <div class="card reveal">
-        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v18M7 3v6a5 5 0 0 0 10 0V3"/></svg></span>
+        <div class="card-media"><img src="images/dinner-food.jpg" alt="House-made quiches straight out of the oven" loading="lazy" /></div>
         <h3>Light lunches</h3>
         <p>Toasties, salads and something warm at midday — real food made to order, not sitting around all day.</p>
       </div>
       <div class="card reveal">
-        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11h18v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-9z"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+        <div class="card-media"><img src="images/eclairs.jpg" alt="Chocolate eclairs ready to take away" loading="lazy" /></div>
         <h3>Takeaway &amp; on the go</h3>
         <p>Grabbing coffee before the trip out to the beach or over the hill? We'll have it ready quick.</p>
       </div>
       <div class="card reveal">
-        <span class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11z"/><path d="M9 9l2 2 4-4"/></svg></span>
+        <div class="card-media"><img src="images/carrot-cake.jpg" alt="Carrot cake with cream cheese icing and pepitas" loading="lazy" /></div>
         <h3>Something for everyone</h3>
         <p>Gluten-free and vegetarian options, and easy choices for the kids. Just ask and we'll sort you out.</p>
       </div>
@@ -130,7 +114,7 @@
 <section class="section section-bone about" id="about">
   <div class="wrap split">
     <div class="about-media reveal">
-      <img src="images/pantry.jpg" alt="A freshly made coffee on the counter at Good as Gold Cafe" width="1100" height="825" loading="lazy" />
+      <img src="images/pantry.jpg" alt="The Good as Gold cabinet stocked with sandwiches, quiches and slices" width="1100" height="825" loading="lazy" />
       <div class="corner-tag"><span>In</span><b>Tākaka</b></div>
     </div>
     <div class="reveal">
@@ -139,9 +123,9 @@
       <p>Good as Gold Cafe is a relaxed, friendly spot in Tākaka — the kind of place where the coffee's good, the food's honest, and you're never rushed. Whether you're a local grabbing your morning flat white or a traveller passing through the Bay, there's a table and a warm welcome waiting.</p>
       <p>We keep things simple and do them well: good coffee, food made fresh, and service with a smile. It's what's earned us a loyal following and a solid run of great reviews.</p>
       <ul class="checklist">
-        <li><span class="tick">✓</span> Locally owned and run, part of the Golden Bay community</li>
-        <li><span class="tick">✓</span> Coffee pulled fresh, food made to order</li>
-        <li><span class="tick">✓</span> A friendly, unhurried welcome for everyone</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Locally owned and run, part of the Golden Bay community</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> Coffee pulled fresh, food made to order</li>
+        <li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span> A friendly, unhurried welcome for everyone</li>
       </ul>
       <a href="#visit" class="btn btn-dark" style="margin-top:1.8rem;">Come and see us</a>
     </div>
@@ -156,12 +140,14 @@
       <h2>Good coffee, good food, good vibes</h2>
     </div>
     <div class="gallery reveal">
-      <img src="images/carrot-cake.jpg" alt="A brunch plate served at the cafe" loading="lazy" />
-      <img src="images/eclairs.jpg" alt="Fresh baking and pastries in the cabinet" loading="lazy" />
-      <img src="images/banana-cakes.jpg" alt="A coffee being poured with latte art" loading="lazy" />
-      <img src="images/dinner-food.jpg" alt="A warm cup of coffee ready to enjoy" loading="lazy" />
-      <img src="images/cake.jpg" alt="A barista preparing coffee at the machine" loading="lazy" />
-      <img src="images/food-spread.jpg" alt="Relaxed cafe seating with coffee on the table" loading="lazy" />
+      <img src="images/pantry.jpg" alt="The cabinet stocked with sandwiches, quiches, salads and slices" loading="lazy" />
+      <img src="images/food-spread.jpg" alt="Eggs benedict plated up for brunch" loading="lazy" />
+      <img src="images/carrot-cake.jpg" alt="Carrot cake topped with cream cheese icing, pepitas and cranberries" loading="lazy" />
+      <img src="images/eclairs.jpg" alt="A tray of chocolate eclairs filled with cream" loading="lazy" />
+      <img src="images/dinner-food.jpg" alt="House-made tomato and feta quiches" loading="lazy" />
+      <img src="images/banana-cakes.jpg" alt="Banana and chocolate cupcakes from the cabinet" loading="lazy" />
+      <img src="images/cake.jpg" alt="Cream-filled custard slices dusted with icing sugar" loading="lazy" />
+      <img src="images/outside.jpg" alt="The Good as Gold Cafe entrance in Takaka" loading="lazy" />
     </div>
   </div>
 </section>
@@ -220,26 +206,29 @@
 <section class="section section-cream" id="reviews">
   <div class="wrap">
     <div class="head center reveal">
-      <span class="badge">Example reviews</span>
-      <h2 style="margin-top:0;">What people say about us</h2>
-      <p class="lead" style="margin-inline:auto;">A snapshot of the kind of feedback Good as Gold Cafe gets — proudly rated 4.5 stars on Google.</p>
+      <span class="eyebrow" style="justify-content:center;">What people say</span>
+      <h2>Rated 4.6 on Google</h2>
+      <p class="lead" style="margin-inline:auto;">From 39 reviews by Golden Bay locals and people passing through.</p>
     </div>
     <div class="reviews">
       <div class="review-card reveal">
-        <div class="stars">★★★★★</div>
-        <p>"Best flat white in Golden Bay, hands down. We stop in every time we're through Tākaka — the staff are lovely and the brunch is always spot on."</p>
-        <div class="reviewer"><span class="r-av">JM</span><div><b>Jess M.</b><span>Pōhara</span></div></div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;I had lunch with my family, very yummy food. Highly recommend. Very fast service, nice people, amazing decor. Would recommend the American hotdog and latte. Love this cafe!&rdquo;</p>
+        <div class="reviewer"><span class="r-av">R</span><div><b>Rose</b><span>Google review</span></div></div>
       </div>
       <div class="review-card reveal">
-        <div class="stars">★★★★★</div>
-        <p>"Popped in on our way to the beach and ended up staying for ages. Great coffee, friendly service and the baking in the cabinet is dangerous. Highly recommend."</p>
-        <div class="reviewer"><span class="r-av">TR</span><div><b>Tom R.</b><span>Motueka</span></div></div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Cheryl went out of her way to sort a vegetarian version of the pancakes. Amazing service and the coffee was spot on. The choice of slices in the cabinet is dangerous.&rdquo;</p>
+        <div class="reviewer"><span class="r-av">TM</span><div><b>Tara M.</b><span>Example review</span></div></div>
       </div>
       <div class="review-card reveal">
-        <div class="stars">★★★★☆</div>
-        <p>"Lovely little spot with real character. Good breakfast, coffee just how I like it, and they sorted a gluten-free option no worries. A proper local."</p>
-        <div class="reviewer"><span class="r-av">HW</span><div><b>Hine W.</b><span>Collingwood</span></div></div>
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>&ldquo;Popped in on our way to the beach and stayed far longer than planned. Good coffee in the sunshine, great staff, and they sorted a gluten-free option without any fuss.&rdquo;</p>
+        <div class="reviewer"><span class="r-av">HW</span><div><b>Hine W.</b><span>Example review</span></div></div>
       </div>
+    </div>
+    <div class="reviews-cta reveal">
+      <a class="btn btn-dark" href="https://www.google.com/maps?cid=14447928543009035440" target="_blank" rel="noopener">See all our Google reviews <svg class="bico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
     </div>
   </div>
 </section>
@@ -249,9 +238,8 @@
   <div class="wrap reveal">
     <span class="eyebrow" style="justify-content:center;color:var(--gold-soft);">Enjoyed your visit?</span>
     <h2>Happy with your coffee? Leave us a review</h2>
-    <div class="fstars">★★★★★</div>
-    <p>Your feedback helps other Golden Bay locals and travellers find us — it only takes a moment and it means the world.</p>
-    <a href="review.html" class="btn btn-primary btn-lg">Leave a review</a>
+    <p>A quick Google review helps other Golden Bay locals and travellers find us. It takes about a minute.</p>
+    <a href="https://www.google.com/maps?cid=14447928543009035440" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Leave us a review <svg class="bico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7"/><path d="M8 7h9v9"/></svg></a>
   </div>
 </section>
 
@@ -265,7 +253,7 @@
       <ul class="info-list">
         <li>
           <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-          <div><b>Find us</b><a href="https://www.google.com/maps/search/?api=1&query=Good+as+Gold+Cafe+T%C4%81kaka" target="_blank" rel="noopener">Tākaka, Golden Bay</a></div>
+          <div><b>Find us</b><a href="https://www.google.com/maps?cid=14447928543009035440" target="_blank" rel="noopener">Commercial Street, Tākaka, Golden Bay</a></div>
         </li>
         <li>
           <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.2-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg></span>
@@ -273,21 +261,37 @@
         </li>
         <li>
           <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
-          <div><b>Email us</b><a href="mailto:cheryl@goodness2go.co.nz">cheryl@goodness2go.co.nz</a></div>
+          <div><b>Email us</b><a href="#" data-gmail data-user="cheryl" data-domain="goodness2go.co.nz" data-su="Enquiry%20%E2%80%94%20Good%20as%20Gold%20Cafe" data-body="Hi%20Cheryl%2C%0A%0AI%27d%20like%20to%20ask%20about%3A%0A%0A%0A%0AName%3A%20%0APhone%3A%20">Send us an email</a></div>
         </li>
       </ul>
+      <div class="socials">
+        <a href="https://www.facebook.com/GoodAsGoldCafe/" target="_blank" rel="noopener" aria-label="Good as Gold Cafe on Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.44 18.63.07 12 .07S0 5.44 0 12.07c0 5.99 4.39 10.95 10.13 11.85v-8.38H7.08v-3.47h3.05V9.43c0-3.01 1.79-4.67 4.53-4.67 1.31 0 2.69.24 2.69.24v2.95h-1.51c-1.49 0-1.96.93-1.96 1.87v2.25h3.33l-.53 3.47h-2.8v8.38C19.61 23.02 24 18.06 24 12.07z"/></svg></a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=good%20as%20gold%20cafe%20takaka" target="_blank" rel="noopener" aria-label="Find Good as Gold Cafe on Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.15-3.23 1.66-4.77 4.92-4.92C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-11.85a1.44 1.44 0 1 0 0 2.89 1.44 1.44 0 0 0 0-2.89z"/></svg></a>
+        <a href="https://www.tiktok.com/search?q=good%20as%20gold%20cafe%20takaka" target="_blank" rel="noopener" aria-label="Find Good as Gold Cafe on TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg></a>
+      </div>
     </div>
     <div class="contact-actions reveal">
       <h3>Get in touch</h3>
       <p>Give us a call or send an email — we'd love to hear from you.</p>
-      <a href="tel:+6427233 0539" class="btn btn-primary btn-lg">📞 Call Good as Gold Cafe</a>
-      <a href="mailto:cheryl@goodness2go.co.nz" class="btn btn-outline btn-lg">✉ Email Good as Gold Cafe</a>
+      <a href="tel:+6427233 0539" class="btn btn-primary btn-lg"><svg class="bico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8.1 9.6a16 16 0 0 0 6 6l1.2-1.1a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg> Call the cafe</a>
+      <a href="#" class="btn btn-outline btn-lg" data-gmail data-user="cheryl" data-domain="goodness2go.co.nz" data-su="Enquiry%20%E2%80%94%20Good%20as%20Gold%20Cafe" data-body="Hi%20Cheryl%2C%0A%0AI%27d%20like%20to%20ask%20about%3A%0A%0A%0A%0AName%3A%20%0APhone%3A%20"><svg class="bico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg> Email the cafe</a>
       <div class="hours-mini">
-        <div><span>Mon – Fri</span><span>7:00am – 3:00pm</span></div>
-        <div><span>Saturday</span><span>8:00am – 3:00pm</span></div>
-        <div><span>Sunday</span><span>8:00am – 2:00pm</span></div>
-        <p style="margin-top:.7rem;font-size:.78rem;color:rgba(255,255,255,.5);">Hours shown are a guide — please call to confirm.</p>
+        <div><span>Mon &ndash; Fri</span><span>7:00am &ndash; 4:30pm</span></div>
+        <div><span>Saturday</span><span>Closed</span></div>
+        <div><span>Sunday</span><span>Closed</span></div>
+        <p style="margin-top:.7rem;font-size:.78rem;color:rgba(255,255,255,.5);">Hours are taken from our Google listing, please call to confirm.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section class="map-sec">
+  <div class="wrap">
+    <div class="map-wrap reveal">
+      <iframe src="https://www.google.com/maps?q=Good%20as%20Gold%20Cafe%20Commercial%20Street%20T%C4%81kaka&amp;output=embed"
+              title="Map showing Good as Gold Cafe on Commercial Street, Takaka" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
     </div>
   </div>
 </section>
@@ -307,18 +311,23 @@
           <li><a href="#about">About</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#reviews">Reviews</a></li>
-          <li><a href="review.html">Leave a review</a></li>
+          <li><a href="https://www.google.com/maps?cid=14447928543009035440" target="_blank" rel="noopener">Leave a review</a></li>
         </ul>
       </div>
       <div>
         <h5>Visit</h5>
         <ul>
-          <li><a href="https://www.google.com/maps/search/?api=1&query=Good+as+Gold+Cafe+T%C4%81kaka" target="_blank" rel="noopener">Tākaka, Golden Bay</a></li>
+          <li><a href="https://www.google.com/maps?cid=14447928543009035440" target="_blank" rel="noopener">Commercial Street, Tākaka</a></li>
           <li><a href="tel:+6427233 0539">+64 27 233 0539</a></li>
-          <li><a href="mailto:cheryl@goodness2go.co.nz">cheryl@goodness2go.co.nz</a></li>
+          <li><a href="#" data-gmail data-user="cheryl" data-domain="goodness2go.co.nz" data-su="Enquiry%20%E2%80%94%20Good%20as%20Gold%20Cafe" data-body="Hi%20Cheryl%2C%0A%0AI%27d%20like%20to%20ask%20about%3A%0A%0A%0A%0AName%3A%20%0APhone%3A%20">Email us</a></li>
         </ul>
       </div>
     </div>
+      <div class="socials footer-socials">
+        <a href="https://www.facebook.com/GoodAsGoldCafe/" target="_blank" rel="noopener" aria-label="Good as Gold Cafe on Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.44 18.63.07 12 .07S0 5.44 0 12.07c0 5.99 4.39 10.95 10.13 11.85v-8.38H7.08v-3.47h3.05V9.43c0-3.01 1.79-4.67 4.53-4.67 1.31 0 2.69.24 2.69.24v2.95h-1.51c-1.49 0-1.96.93-1.96 1.87v2.25h3.33l-.53 3.47h-2.8v8.38C19.61 23.02 24 18.06 24 12.07z"/></svg></a>
+        <a href="https://www.instagram.com/explore/search/keyword/?q=good%20as%20gold%20cafe%20takaka" target="_blank" rel="noopener" aria-label="Find Good as Gold Cafe on Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.15-3.23 1.66-4.77 4.92-4.92C8.42 2.17 8.8 2.16 12 2.16zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.69.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.2-4.35-2.62-6.78-6.98-6.98C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 1 0 0 12.32 6.16 6.16 0 0 0 0-12.32zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.41-11.85a1.44 1.44 0 1 0 0 2.89 1.44 1.44 0 0 0 0-2.89z"/></svg></a>
+        <a href="https://www.tiktok.com/search?q=good%20as%20gold%20cafe%20takaka" target="_blank" rel="noopener" aria-label="Find Good as Gold Cafe on TikTok"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg></a>
+      </div>
     <div class="footer-bottom">
       <span>© <span data-year>2026</span> Good as Gold Cafe · Tākaka, Golden Bay</span>
       <span><a href="terms.html">Terms &amp; Conditions</a> · <a href="privacy.html">Privacy Policy</a></span>

@@ -68,3 +68,16 @@
   var y = document.querySelector("[data-year]");
   if (y) y.textContent = new Date().getFullYear();
 })();
+
+// Gmail compose links (no raw address in the HTML)
+(function () {
+  document.querySelectorAll("a[data-gmail]").forEach(function (a) {
+    var to = a.getAttribute("data-user") + "@" + a.getAttribute("data-domain");
+    var su = a.getAttribute("data-su") || "";
+    var body = a.getAttribute("data-body") || "";
+    a.href = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(to) +
+             "&su=" + su + "&body=" + body;
+    a.target = "_blank";
+    a.rel = "noopener";
+  });
+})();
