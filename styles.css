@@ -326,3 +326,26 @@ a { color: inherit; text-decoration: none; }
 .brand__name { font-family: "Schibsted Grotesk", sans-serif; font-weight: 800; font-size: 1.12rem; letter-spacing: -0.01em; color: #fff; white-space: nowrap; }
 .nav.scrolled .brand__name { color: var(--espresso); }
 @media (max-width: 520px){ .brand__name { display: none; } }
+
+/* ===== 360 virtual tour ===== */
+.tour { background: var(--espresso); color: #fff; }
+.tour .head h2 { color: #fff; }
+.tour .head p { color: rgba(255, 255, 255, 0.72); }
+.tour .eyebrow { color: var(--gold-soft); }
+.tour .eyebrow::before { background: var(--gold-soft); }
+.tour-frame {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: #17110b;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+.tour-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+.tour-actions { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 28px; }
+.tour-note { text-align: center; color: rgba(255, 255, 255, 0.58); font-size: .9rem; margin-top: 16px; }
+@media (max-width: 700px) {
+  .tour-frame { aspect-ratio: 4 / 5; }
+  .tour-actions .btn { width: 100%; }
+}
