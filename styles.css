@@ -197,7 +197,7 @@ a { color: inherit; text-decoration: none; }
 /* ---------- ABOUT ---------- */
 .split { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center; }
 .about-media { position: relative; }
-.about-media img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--radius-lg); filter: var(--img-filter); box-shadow: var(--shadow); }
+.about-media img { display: block; width: 100%; height: auto; max-height: 560px; aspect-ratio: 4/3; object-fit: cover; border-radius: var(--radius-lg); filter: var(--img-filter); box-shadow: var(--shadow); }
 .corner-tag { position: absolute; bottom: -18px; left: -18px; background: var(--gold); color: #fff; padding: 1rem 1.3rem; border-radius: 16px; font-family: "Schibsted Grotesk", sans-serif; font-weight: 800; line-height: 1.1; box-shadow: var(--shadow); }
 .corner-tag span { display: block; font-size: .72rem; font-weight: 600; opacity: .85; letter-spacing: .12em; text-transform: uppercase; }
 .corner-tag b { font-size: 1.5rem; }
